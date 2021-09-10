@@ -10,7 +10,7 @@ bot = Client(
   )
   
 @bot.on_message(filters.command(['start']))
-  def Start(Client, message):
+  def start(client, message):
     message.reply(f"hey bruhh how are you)",
     reply_markup=InlineKeyboardMarkup(
       [
