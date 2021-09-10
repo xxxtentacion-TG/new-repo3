@@ -9,8 +9,8 @@ bot = Client(
   api_hash="91c026fadfdc442f504a0bd3e5c8cd18",
   )
   
-@bot.on_message(filters.command(['help']))
-def help(client, message):
+@bot.on_message(filters.command(['start']))
+def start(bot, message):
     message.reply(f"hey bruhh how are you)",
     reply_markup=InlineKeyboardMarkup(
       [
